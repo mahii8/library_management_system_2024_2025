@@ -1,0 +1,19 @@
+# Create a new user
+POST http://localhost:5000/auth/signup
+Content-Type: application/json
+
+{
+  "email": "johndoe@example.com",
+  "password" : "111111111",
+  "role" : "admin"
+}
+
+# Login a user
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+  "email": "janedoe@example.com",
+  "password" : "111111111",
+  "role" : "user"
+}
