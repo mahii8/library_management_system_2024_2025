@@ -5,7 +5,7 @@ import {
 } from '@nestjs/common';
 import { AuthDto } from './dto/auth.dto';
 import { InjectModel } from '@nestjs/mongoose';
-import { User, UserDocument } from './schemas/user.schema';
+import { User, UserDocument } from './schema/user.schema';
 import { Model } from 'mongoose';
 import * as bcrypt from 'bcryptjs';
 import { JwtService } from '@nestjs/jwt';
@@ -18,12 +18,10 @@ export class AuthService {
   ) {}
 
   getToken(userEmail: string, userRole: string): string {
-    const accessToken = this.jwtService.sign({
+    return this.jwtService.sign({
       email: userEmail,
       role: userRole,
     });
-
-    return accessToken;
   }
 
   async signup(dto: AuthDto): Promise<{ token: string }> {
@@ -68,7 +66,6 @@ export class AuthService {
     }
 
     const token = this.getToken(email, role);
-    console.log('Token', token);
     return { token: token };
   }
 }
