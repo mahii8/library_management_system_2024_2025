@@ -1,0 +1,20 @@
+body {
+    background-color: #f8f9fa;
+}
+.navbar {
+    background-color: #2d3e50;
+}
+.navbar-brand {
+    color: #ffffff;
+}
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+.form-control {
+    border-radius: 0.5rem;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
