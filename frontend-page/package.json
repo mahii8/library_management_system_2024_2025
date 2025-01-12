@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "@nestjs/common": "^10.4.15",
-    "cors": "^2.8.5"
-  }
-}
