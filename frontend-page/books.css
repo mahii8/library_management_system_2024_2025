@@ -1,0 +1,146 @@
+body {
+    background-color: #f8f9fa;
+}
+.navbar {
+    background-color: #2d3e50;
+}
+.navbar-brand {
+    color: #ffffff;
+}
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+.table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+}
+a{
+    color: #f0f4f8;
+}
+/* Add spacing between the buttons and the footer */
+.buttons-container {
+    margin-bottom: 2rem; /* Adds space below the container of the buttons */
+}
+
+/* Individual button spacing (if needed) */
+.buttons-container .btn {
+    margin-bottom: 1rem; /* Adds space between each button */
+}
+
+/* Footer styles */
+.ourfooter {
+    background-color: #2d3e50; 
+    color: #f5f5f5; 
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 5rem; /* Adjusted padding for smaller footer */
+    flex-wrap: wrap; /* Ensures responsiveness */
+    margin-top: 2rem; /* Adds space above the footer */
+}
+
+
+
+.ourfooter h2 {
+    font-size: 1.2rem; /* Slightly smaller font */
+    margin-bottom: 0.5rem;
+}
+
+.ourfooter span {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.ourfooter p {
+    font-size: 0.9rem; /* Smaller font size for compactness */
+    line-height: 1.4;
+}
+
+.ourfooter > div {
+    margin: 2%;
+    flex: 1 1 20%; /* Ensures responsive layout */
+    min-width: 180px; /* Reduced minimum width */
+}
+
+/* Image Styling in Footer */
+.image-container > div {
+    display: flex;
+    flex-wrap: wrap; /* Makes images responsive */
+    gap: 1rem;
+}
+
+.image-container img {
+    width: 90px; /* Reduced image size */
+    height: 100px;
+    margin: 0.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Slightly lighter shadow */
+}
+
+/* About Section */
+.about-footer {
+    display: flex;
+    flex-wrap: wrap; /* Responsive for smaller screens */
+    gap: 1rem;
+}
+
+.about-footer img {
+    width: 180px; /* Adjusted image size for compactness */
+    height: auto;
+}
+
+/* Contact Section */
+.ourcontact h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.ourcontact > div {
+    margin-top: 1rem;
+}
+
+/* Dark Footer Section */
+.dark-footer {
+    background-color: #2d3e50; 
+    color: #f0f4f8; 
+    padding: 2rem 5rem; /* Reduced padding for more compact layout */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.dark-footer h2 {
+    font-size: 1.1rem; /* Slightly smaller font */
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+
+.dark-footer nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem; /* Adds consistent spacing */
+}
+
+.dark-footer nav ul li {
+    padding: 0.5rem 0.75rem;
+    border-radius: 5px;
+    background-color: #7d8c99; /* Subtle hover effect */
+    transition: background-color 0.3s ease;
+}
+
+.dark-footer nav ul li a {
+    color: #f0f4f8;
+    text-decoration: none;
+}
+
+.dark-footer nav ul li:hover {
+    background-color: #ffffff; 
+}
+
+.dark-footer nav ul li a:hover {
+    color: #2d3e50; 
+}
